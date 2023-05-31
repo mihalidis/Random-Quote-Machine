@@ -2,7 +2,7 @@
 
 This is a machine that shares random quotes from some famous writers, thinkers and people. [FreeCodeCamp](https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-random-quote-machine).
 
-**Live:**
+**Live:** https://random-quote-machine-2spwjtwiy-mihalidis.vercel.app/
 
 ## Table of contents
 
@@ -26,8 +26,8 @@ This is a machine that shares random quotes from some famous writers, thinkers a
 
 ### Links
 
-- Solution URL: [Github Repository]()
-- Live Site URL: [Random Quote Machine]()
+- Solution URL: [Github Repository](https://github.com/mihalidis/Random-Quote-Machine)
+- Live Site URL: [Random Quote Machine](https://random-quote-machine-2spwjtwiy-mihalidis.vercel.app/)
 
 ## My process
 
@@ -35,6 +35,7 @@ This is a machine that shares random quotes from some famous writers, thinkers a
 
 - [React](https://react.dev/) - JS library
 - [Axios](https://axios-http.com/docs/intro) -  promise-based HTTP Client
+- [FontAwesome](https://fontawesome.com/) - Icons from
 
 ## Author
 
