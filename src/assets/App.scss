@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.quote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+
+  &-card {
+    background-color: #fff;
+    max-width: 550px;
+    padding: 40px 50px;
+    border-radius: 5px;
+  }
+
+  &-text {
+    font-size: 28px;
+    text-align: center;
+
+    i {
+      margin-right: 10px;
+    }
+  }
+
+  &-author {
+    display: flex;
+    justify-content: right;
+    padding-top: 20px;
+  }
+
+  &-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    cursor: pointer;
+
+    .share-buttons {
+      display: flex;
+
+      .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 5px;
+        padding: 10px;
+        width: 40px;
+        border-radius: 5px;
+        text-decoration: none;
+
+        i {
+          font-size: 18px;
+          color: #fff;
+        }
+      }
+    }
+
+    .new-quote {
+      border: none;
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+}
+
+.fade-transition {
+  transition: background-color 1000ms ease;
+}
