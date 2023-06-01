@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons'
 import './assets/App.scss'
+import { getRandomNumber, getRandomColor } from './helpers/utils'
 
 function App() {
   const [quotes, setQuotes] = useState([]);
@@ -28,26 +29,6 @@ function App() {
 
     fetchData();
   }, []);
-
-  function getRandomNumber(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-  }
-
-  function getRandomColor() {
-    var r = Math.floor(Math.random() * 256);
-    var g = Math.floor(Math.random() * 256);
-    var b = Math.floor(Math.random() * 256);
-
-    var brightness = (r * 299 + g * 587 + b * 114) / 1000;
-
-    if (brightness < 128) {
-      r = Math.floor(Math.random() * 128) + 128;
-      g = Math.floor(Math.random() * 128) + 128;
-      b = Math.floor(Math.random() * 128) + 128;
-    }
-
-    return `rgb(${r},${g},${b})`;
-  }
 
   function getNewQuote() {
     setQuote(quotes[getRandomNumber(0, quotes.length)]);
